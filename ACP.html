@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            ACP
+        </title>
+    </head>
+    <body>
+        <h1>Error catching</h1>
+        <p id="beta_mistake"></p>
+        <script>
+            try{
+                function myfunction(){
+                    var x=6;
+                    var y=0;
+                    var div=x/y;
+                }
+            }
+                catch(err){
+                    document.getElementById("beta_mistake").innerHTML = err.message;
+                }
+             
+            
+        </script>
+    </body>
+
+</html>
